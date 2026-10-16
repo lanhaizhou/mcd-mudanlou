@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 737" width="420" height="737">
+  <defs>
+    <!-- 纸质微黄纹理 -->
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F2" />
+      <stop offset="50%" stop-color="#FAF6ED" />
+      <stop offset="100%" stop-color="#F5F0E1" />
+    </linearGradient>
+
+    <!-- 红色复古印章滤镜 -->
+    <filter id="stampRough">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <style>
+      .font-title { font-family: "SimSun", "Songti SC", "STSong", "Microsoft YaHei", serif; }
+      .font-mono { font-family: "Courier New", "SimSun", monospace; }
+      .font-sans { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 票据底纸与阴影 -->
+  <rect x="15" y="10" width="390" height="717" fill="url(#paperGrad)" stroke="#E4DBCB" stroke-width="1" rx="2" />
+
+  <!-- 顶部撕纸锯齿 -->
+  <path d="M 0 10 L 5 6 L 10 10 L 15 6 L 20 10 L 25 6 L 30 10 L 35 6 L 40 10 L 45 6 L 50 10 L 55 6 L 60 10 L 65 6 L 70 10 L 75 6 L 80 10 L 85 6 L 90 10 L 95 6 L 100 10 L 105 6 L 110 10 L 115 6 L 120 10 L 125 6 L 130 10 L 135 6 L 140 10 L 145 6 L 150 10 L 155 6 L 160 10 L 165 6 L 170 10 L 175 6 L 180 10 L 185 6 L 190 10 L 195 6 L 200 10 L 205 6 L 210 10 L 215 6 L 220 10 L 225 6 L 230 10 L 235 6 L 240 10 L 245 6 L 250 10 L 255 6 L 260 10 L 265 6 L 270 10 L 275 6 L 280 10 L 285 6 L 290 10 L 295 6 L 300 10 L 305 6 L 310 10 L 315 6 L 320 10 L 325 6 L 330 10 L 335 6 L 340 10 L 345 6 L 350 10 L 355 6 L 360 10 L 365 6 L 370 10 L 375 6 L 380 10 L 385 6 L 390 10" fill="#ECE6D8" transform="translate(15, 0)" />
+
+  <!-- 抬头：茶楼招牌 -->
+  <g class="font-title" text-anchor="middle">
+    <text x="210" y="45" font-size="20" font-weight="900" letter-spacing="4" fill="#8B1D1D">牡丹樓大茶樓</text>
+    <text x="210" y="66" font-size="10" letter-spacing="2" fill="#756D63">省港老字號 · 水滾茶靚 · 創於光緒年間</text>
+    <rect x="120" y="76" width="180" height="20" fill="#8B1D1D" rx="2" />
+    <text x="210" y="90" font-size="11" font-weight="bold" fill="#FFFFFF" letter-spacing="1">【 堂食茶市水單 / 外賣單 】</text>
+  </g>
+
+  <!-- 订单基本信息 -->
+  <g class="font-mono" font-size="11" fill="#4A443C">
+    <text x="35" y="120">單號：<tspan font-weight="bold" fill="#2B2824">MDL-850013</tspan></text>
+    <text x="35" y="138">開單：2026年10月16日 晏晝 11:43:01</text>
+    <text x="35" y="156">堂倌：<tspan font-weight="bold">發仔</tspan>   |  枱號：大廳 08 卡位</text>
+    <text x="35" y="174">茶位：鐵觀音（滾水洗碗·茶位免收）</text>
+  </g>
+
+  <!-- 虚线分隔线 1 -->
+  <line x1="30" y1="188" x2="390" y2="188" stroke="#9E9484" stroke-width="1" stroke-dasharray="4,3" />
+
+  <!-- 表头（去除生硬实线，优化呼吸感与字色） -->
+  <g class="font-title" font-size="12" font-weight="bold" fill="#5A524A">
+    <text x="35" y="208">點心明細</text>
+    <text x="275" y="208">數量</text>
+    <text x="385" y="208" text-anchor="end">銀兩</text>
+  </g>
+
+  <!-- 菜品列表 -->
+  <g class="font-sans">
+    
+      <text x="35" y="232" font-size="13" font-weight="bold" fill="#2B2824">生煎酥皮辣鳳腿包</text>
+      <text x="280" y="232" font-size="12" fill="#5A524A">壹件</text>
+      <text x="385" y="232" font-size="13" font-weight="bold" text-anchor="end" fill="#2B2824">$22.0</text>
+    
+        <text x="45" y="248" font-size="11" fill="#7D746B">└ (飛生菜、多醬)</text>
+      
+      <text x="35" y="268" font-size="13" font-weight="bold" fill="#2B2824">金絲油炸脆番薯條 (大)</text>
+      <text x="280" y="268" font-size="12" fill="#5A524A">壹包</text>
+      <text x="385" y="268" font-size="13" font-weight="bold" text-anchor="end" fill="#2B2824">$13.5</text>
+    
+        <text x="45" y="284" font-size="11" fill="#7D746B">└ (趁熱食)</text>
+      
+      <text x="35" y="304" font-size="13" font-weight="bold" fill="#2B2824">椒鹽酥炸香辣鳳羽</text>
+      <text x="280" y="304" font-size="12" fill="#5A524A">兩件</text>
+      <text x="385" y="304" font-size="13" font-weight="bold" text-anchor="end" fill="#2B2824">$0.0</text>
+    
+        <text x="45" y="320" font-size="11" fill="#7D746B">└ (周一開倉濟世·會員特惠)</text>
+      
+      <text x="35" y="340" font-size="13" font-weight="bold" fill="#2B2824">西洋清涼黑玉汽水</text>
+      <text x="280" y="340" font-size="12" fill="#5A524A">壹杯</text>
+      <text x="385" y="340" font-size="13" font-weight="bold" text-anchor="end" fill="#2B2824">$0.0</text>
+    
+        <text x="45" y="356" font-size="11" fill="#7D746B">└ (隨心搭配·走冰)</text>
+      
+  </g>
+
+  <!-- 虚线分隔线 2 -->
+  <line x1="30" y1="381" x2="390" y2="381" stroke="#9E9484" stroke-width="1" stroke-dasharray="4,3" />
+
+  <!-- 老中医养生监测 -->
+  <g class="font-title">
+    <text x="35" y="403" font-size="12" font-weight="bold" fill="#A83232">【 養生老中醫監測 】</text>
+    <text x="165" y="403" font-size="13" font-weight="bold" fill="#D32F2F" letter-spacing="2">熱氣指數：★★★★☆</text>
+    <text x="35" y="421" font-size="11" fill="#6B6256" class="font-sans">(老中醫叮囑：極度熱氣！食完記得灌兩碗廿四味降火)</text>
+  </g>
+
+  <!-- 虚线分隔线 3 -->
+  <line x1="30" y1="435" x2="390" y2="435" stroke="#9E9484" stroke-width="1" stroke-dasharray="4,3" />
+
+  <!-- 金额计算 -->
+  <g class="font-mono" font-size="12" fill="#4A443C">
+    <text x="35" y="457">原價合計：</text>
+    <text x="385" y="457" text-anchor="end" font-weight="bold">$35.5 蚊</text>
+
+    <text x="35" y="475" fill="#A83232">街坊人情折：</text>
+    <text x="385" y="475" text-anchor="end" font-weight="bold" fill="#A83232">-$16.0 蚊</text>
+
+    <text x="35" y="495" font-size="14" font-weight="bold" fill="#2B2824">實收銀兩：</text>
+    <text x="385" y="495" text-anchor="end" font-size="16" font-weight="bold" fill="#8B1D1D">$19.5 蚊</text>
+  </g>
+
+  <!-- 碰头暗号框 -->
+  <g transform="translate(30, 525)">
+    <rect x="0" y="0" width="360" height="76" fill="#F4EEE1" stroke="#8B1D1D" stroke-width="1.5" stroke-dasharray="6,2" rx="4" />
+    <text x="180" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#8B1D1D" class="font-title" letter-spacing="2">【 牡丹樓·堂食碰頭暗號 】</text>
+    
+    <!-- 经典影视金句 -->
+    <rect x="12" y="26" width="336" height="30" fill="#FFFFFF" stroke="#D1C7B7" rx="3" />
+    <text x="180" y="46" text-anchor="middle" font-size="12" font-weight="bold" fill="#1F1C18" class="font-title">「 飲啖茶，食個包，唔好急最緊要快！ 」</text>
+    
+    <text x="180" y="68" text-anchor="middle" font-size="9" fill="#8C8275" class="font-sans">(憑此暗號向前台小二領餐，對唔上暗號唔准走)</text>
+  </g>
+
+  <!-- 红色复古印章 -->
+  <g transform="translate(320, 570) rotate(-10)" filter="url(#stampRough)">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#C62828" stroke-width="2.5" stroke-dasharray="14,2,8,2" />
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#C62828" stroke-width="1" />
+    <text x="0" y="-4" text-anchor="middle" font-size="11" font-weight="900" fill="#C62828" class="font-title" letter-spacing="2">牡丹樓</text>
+    <text x="0" y="12" text-anchor="middle" font-size="10" font-weight="900" fill="#C62828" class="font-title" letter-spacing="3">銀訖</text>
+  </g>
+
+  <!-- 条形码 -->
+  <g>
+    <rect x="70.0" y="640" width="7.3" height="24" fill="#2B2824" />
+<rect x="88.2" y="640" width="10.9" height="24" fill="#2B2824" />
+<rect x="110.0" y="640" width="3.6" height="24" fill="#2B2824" />
+<rect x="128.2" y="640" width="14.5" height="24" fill="#2B2824" />
+<rect x="153.6" y="640" width="7.3" height="24" fill="#2B2824" />
+<rect x="179.1" y="640" width="3.6" height="24" fill="#2B2824" />
+<rect x="197.3" y="640" width="3.6" height="24" fill="#2B2824" />
+<rect x="219.1" y="640" width="7.3" height="24" fill="#2B2824" />
+<rect x="237.3" y="640" width="14.5" height="24" fill="#2B2824" />
+<rect x="266.4" y="640" width="3.6" height="24" fill="#2B2824" />
+<rect x="288.2" y="640" width="3.6" height="24" fill="#2B2824" />
+<rect x="306.4" y="640" width="10.9" height="24" fill="#2B2824" />
+<rect x="331.8" y="640" width="3.6" height="24" fill="#2B2824" />
+
+    <text x="210" y="674" text-anchor="middle" font-size="9" font-family="Courier New, monospace" fill="#665F55" letter-spacing="3">★ VERIFIED ORDER ★</text>
+  </g>
+
+  <!-- 底部告示 -->
+  <g class="font-title" text-anchor="middle" font-size="10" fill="#756D63">
+    <text x="210" y="692">★ 得閒常嚟飲茶！包包新鮮出爐，小心辣親嘴！★</text>
+    <text x="210" y="708">★ 憑此單可向前台小二領番茄醬包貳包 · 水滾茶靚 ★</text>
+  </g>
+
+  <!-- 底部撕纸锯齿 -->
+  <path d="M 0 727 L 5 731 L 10 727 L 15 731 L 20 727 L 25 731 L 30 727 L 35 731 L 40 727 L 45 731 L 50 727 L 55 731 L 60 727 L 65 731 L 70 727 L 75 731 L 80 727 L 85 731 L 90 727 L 95 731 L 100 727 L 105 731 L 110 727 L 115 731 L 120 727 L 125 731 L 130 727 L 135 731 L 140 727 L 145 731 L 150 727 L 155 731 L 160 727 L 165 731 L 170 727 L 175 731 L 180 727 L 185 731 L 190 727 L 195 731 L 200 727 L 205 731 L 210 727 L 215 731 L 220 727 L 225 731 L 230 727 L 235 731 L 240 727 L 245 731 L 250 727 L 255 731 L 260 727 L 265 731 L 270 727 L 275 731 L 280 727 L 285 731 L 290 727 L 295 731 L 300 727 L 305 731 L 310 727 L 315 731 L 320 727 L 325 731 L 330 727 L 335 731 L 340 727 L 345 731 L 350 727 L 355 731 L 360 727 L 365 731 L 370 727 L 375 731 L 380 727 L 385 731 L 390 727" fill="#ECE6D8" transform="translate(15, 0)" />
+</svg>
